@@ -2,6 +2,8 @@
 
 A notes-taking application built with Django REST Framework and Next.js.
 
+**Link Demo**: https://notes-app-django-next.vercel.app
+
 ## Tech Stack
 
 - **Backend**: Django 5 + Django REST Framework + SQLite
@@ -19,7 +21,7 @@ The project was built incrementally following the Figma designs as the source of
 - Colors from Figma: `#88642A` titles, `#957139` borders/buttons, `#F5E6D3` background
 - Category colors: `#EF9C66`, `#FCDC94`, `#C8CFA0`, `#78ABA8`
 - Auto-save with 1s debounce for title/body, immediate save for category changes
-- Sidebar with overlay/relief effect for visual separation (not in original Figma)
+- Sidebar with overlay/relief effect for visual separation,instead origin design from figma, added a subtle elevated panel to make the categories section more distinct from the notes grid
 - Logout button placed at the bottom of the sidebar column (not next to "+ New Note") to prevent accidental logouts
 - Note editor as a bordered card within beige page, matching Figma layout
 - Category dropdown saves immediately so changes persist when closing
