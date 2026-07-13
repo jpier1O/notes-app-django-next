@@ -49,8 +49,8 @@ export default function NoteCard({ note, onDelete }: NoteCardProps) {
         </h3>
 
         {/* Body preview */}
-        <p className="font-['Inter'] font-normal text-[12px] leading-[1.1] text-black mt-2">
-          {truncate(note.body || '', 100)}
+        <p className="font-['Inter'] font-normal text-[12px] leading-[1.4] text-black mt-2 whitespace-pre-line overflow-hidden">
+          {truncate(note.body || '', 150)}
         </p>
       </div>
     </div>

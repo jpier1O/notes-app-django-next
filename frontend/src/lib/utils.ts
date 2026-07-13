@@ -15,11 +15,11 @@ export function formatRelativeDate(dateString: string): string {
   const targetDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
 
   if (targetDate.getTime() === today.getTime()) {
-    return 'Today';
+    return 'today';
   }
 
   if (targetDate.getTime() === yesterday.getTime()) {
-    return 'Yesterday';
+    return 'yesterday';
   }
 
   const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
