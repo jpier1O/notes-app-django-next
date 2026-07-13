@@ -32,7 +32,7 @@ export default function NoteCard({ note, onDelete }: NoteCardProps) {
       </button>
 
       {/* Clickable area */}
-      <div onClick={() => router.push(`/notes/${note.id}`)} className="flex flex-col gap-[12px] flex-1">
+      <div onClick={() => router.push(`/notes/${note.id}`)} className="flex flex-col gap-[12px] flex-1 overflow-hidden pr-3e">
         {/* Date and Category */}
         <div className="flex items-center gap-2">
           <span className="font-['Inter'] font-bold text-[12px] leading-none text-black">
@@ -44,13 +44,13 @@ export default function NoteCard({ note, onDelete }: NoteCardProps) {
         </div>
 
         {/* Title */}
-        <h3 className="font-serif font-bold text-[24px] leading-[1.1] text-black">
+        <h3 className="font-serif font-bold text-[24px] leading-[1.2] text-black">
           {note.title || 'Untitled'}
         </h3>
 
-        {/* Body preview */}
-        <p className="font-['Inter'] font-normal text-[12px] leading-[1.4] text-black mt-2 whitespace-pre-line overflow-hidden">
-          {truncate(note.body || '', 150)}
+        {/* Body preview — fills remaining space and clips naturally */}
+        <p className="font-['Inter'] font-normal text-[12px] leading-[1.5] text-black whitespace-pre-line overflow-hidden flex-1">
+          {truncate(note.body || '', 345)}
         </p>
       </div>
     </div>
