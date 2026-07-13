@@ -15,7 +15,7 @@ export default function NoteCard({ note, onDelete }: NoteCardProps) {
   return (
     <div
       className="relative w-full h-[246px] p-[16px] rounded-[11px] border-[3px] cursor-pointer hover:shadow-md transition-shadow flex flex-col gap-[12px]"
-      style={{ backgroundColor: note.category.color, borderColor: note.category.color }}
+      style={{ backgroundColor: note.category.color + '80', borderColor: note.category.color }}
     >
       {/* Delete button */}
       <button

@@ -168,8 +168,8 @@ export default function NoteEditorPage() {
 
         {/* Note card with category color */}
         <div
-          className="rounded-xl border p-8 min-h-[calc(100vh-120px)]"
-          style={{ backgroundColor: bgColor, borderColor: bgColor }}
+          className="rounded-xl border-[3px] p-8 min-h-[calc(100vh-120px)]"
+          style={{ backgroundColor: bgColor + '80', borderColor: bgColor }}
         >
           {/* Last edited inside card top-right */}
           <div className="flex justify-end mb-4">

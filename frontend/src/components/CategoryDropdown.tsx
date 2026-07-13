@@ -43,16 +43,14 @@ export default function CategoryDropdown({ categories, selectedId, onChange }: C
 
       {isOpen && (
         <div className="absolute top-full left-0 mt-1 w-[225px] bg-[#FAF1E3] rounded-[6px] shadow-lg border border-[#957139]/20 z-50 py-1">
-          {categories.map((category) => (
+          {categories.filter((category) => category.id !== selectedId).map((category) => (
             <button
               key={category.id}
               onClick={() => {
                 onChange(category.id);
                 setIsOpen(false);
               }}
-              className={`w-full text-left px-[15px] py-[7px] flex items-center gap-2 hover:bg-[#95713933] transition-colors ${
-                category.id === selectedId ? 'bg-[#95713933]' : ''
-              }`}
+              className="w-full text-left px-[15px] py-[7px] flex items-center gap-2 hover:bg-[#95713933] transition-colors"
             >
               <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: category.color }} />
               <span className="text-black font-['Inter'] font-normal text-[12px] leading-none">{category.name}</span>
