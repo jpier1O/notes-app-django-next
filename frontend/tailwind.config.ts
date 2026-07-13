@@ -12,7 +12,7 @@ const config: Config = {
         serif: ['"Inria Serif"', 'serif'],
       },
       colors: {
-        beige: "#F5E6D3",
+        beige: "#FAF1E3",
         cream: "#FFF8F0",
         primary: "#4A3728",
         secondary: "#8B7355",
