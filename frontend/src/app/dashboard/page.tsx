@@ -127,9 +127,9 @@ export default function DashboardPage() {
               </button>
             </div>
           ) : filteredNotes.length === 0 ? (
-            <div className="flex flex-col items-center justify-center h-64 text-center">
-              <div className="text-6xl mb-4">☕</div>
-              <p className="text-secondary text-lg">
+            <div className="flex flex-col items-center justify-center min-h-[70vh] text-center">
+              <img src="/home-notes.png" alt="Waiting for notes" className="mb-6 h-64" />
+              <p className="font-['Inter'] font-normal text-[24px] leading-none text-secondary">
                 I&apos;m just here waiting for your charming notes...
               </p>
             </div>

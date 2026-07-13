@@ -26,6 +26,7 @@ The project was built incrementally following the Figma designs as the source of
 - Delete from both dashboard (trash icon on cards) and note editor, both with confirmation dialog
 - Used distinct icons: X = close/navigate back, trash = delete. Avoids user confusion between closing and deleting
 - Confirmation modal with beige overlay and matching color scheme instead of dark overlay, keeps the aesthetic consistent
+- Deployment: Vercel for frontend (native Next.js support, zero config) and Railway for backend (Django/Python hosting with free tier)
 
 ## Getting Started
 
